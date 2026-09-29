@@ -1,0 +1,68 @@
+{
+  "repo": "picokit-08-servo-gauge",
+  "eyebrow": "PICOKIT // LESSON 08",
+  "title": "PICOKIT // SERVO GAUGE",
+  "subtitle": "SG90 GAUGE NEEDLE AND AUTHENTICATED HEARTBEAT",
+  "accent": "#FFC000",
+  "dim": "#9E7700",
+  "white": "#F3EDDB",
+  "cyan": "#7FD8E0",
+  "bg": "#110D00",
+  "bg_edge": "#050300",
+  "icon": "gauge",
+  "panel_status": "STEP 6 / 12  ·  ANGLE 90  ·  AEAD :ON",
+  "chips": [
+    {
+      "label": "SERVO",
+      "value": "90 deg"
+    },
+    {
+      "label": "STEP",
+      "value": "6 / 12"
+    },
+    {
+      "label": "KEY",
+      "value": "argon2id"
+    },
+    {
+      "label": "RADIO",
+      "value": "-34 dBm"
+    }
+  ],
+  "terminal": [
+    "$ gateway listen /dev/cu.usbserial-A50285BI",
+    "[*] node 00008  seq 18  HEARTBEAT  AEAD ok",
+    "[*] anti-replay window ok  counter 18",
+    "[+] gauge step 6  angle 90  onboard blink",
+    "[+] ack sent  rssi -34  snr 8.7"
+  ],
+  "categories": [
+    "GAUGE",
+    "STEP",
+    "SECURE",
+    "LINK"
+  ],
+  "cards": [
+    {
+      "tag": "GAUGE-01",
+      "label": "step",
+      "value": "0-12"
+    },
+    {
+      "tag": "GAUGE-02",
+      "label": "angle",
+      "value": "0-180"
+    },
+    {
+      "tag": "GAUGE-03",
+      "label": "hold",
+      "value": "15 deg"
+    }
+  ],
+  "footer": [
+    "1 NODE  ·  1 GATEWAY  ·  2 WAY LORA  ·  NO PLAINTEXT",
+    "PICOKIT SERIES  ·  OUTPUT  ·  INPUT  ·  RADIO  ==[ GAUGE ]=="
+  ],
+  "layout": "terminal",
+  "stat": "90 deg"
+}
